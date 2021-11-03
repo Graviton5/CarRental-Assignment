@@ -1,0 +1,302 @@
+body{
+	margin:0;
+	padding:0;
+	background-color: #EAE7DC;
+}
+
+a{
+	text-decoration: none;
+}
+
+.navbar{
+	display:block;
+	position:absolute;
+	background-color: transparent;
+	height: auto;
+	width:85vw;
+	margin:5px 0;
+	padding: 0 4vw;
+	top: 0;
+	z-index: 9999;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.nav-2, .fa{
+	display:none;
+}
+
+.nav-right{
+	line-height: 40px;
+	width:100%;
+}
+.nav-left:hover{
+	background-color: #D8C3A5;
+	color: #E85A4F;
+}
+
+.nav-right > a.nav-logo:hover{
+	background-color: transparent !important; 
+}
+
+.nav-right > .active, .nav-right > .active:hover{
+	background-color: #F99084;
+	color: #C83A2F;
+}
+
+.nav-right a{
+	display:inline-block;
+	text-align: center;
+	padding:5px 15px;
+	margin: 0 0 0 10px;
+	border-radius: 5px;
+	color:#C8B395;
+	float:left;
+	font-family: sans-serif;
+	font-weight: 600;
+
+}
+
+a.nav-left{
+	float:right;
+}
+
+#nav-logo{
+	font-family:Raleway, sans-serif;
+	font-weight: 800;
+	font-size: 2em;
+	color: #E85A4F;
+}
+
+#login{
+	border-width: 4px;
+	border-style: solid;
+	border-color: #E85A4F;
+	border-radius: 5px;
+	line-height: 34px;
+	color: #456578;
+}
+
+#register{
+	border-width: 4px;
+	border-style: solid;
+	border-color: #E85A4F;
+	/*background-color: #8E8D8A;*/
+	border-radius: 5px;
+	line-height: 34px;
+	color: #456578;
+}
+.content{
+	position: relative;
+	padding: 12vh;
+	margin: 0 auto;
+	height:auto;
+	width: 80%;
+	/*background-color: #8E8D8A;*/
+	z-index: 1;
+}
+
+.content >h1{
+	font-family: Raleway, sans-serif;
+	font-weight: 800;
+	font-size: 3em;
+	text-align: center;
+	color:#E85A4F;
+	line-height: 10px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.content > p{
+	text-align: center;
+	font-family: Raleway,sans-serif;
+	font-size: 2em;
+}
+.cars{
+/*	background-color: #eb7434;*/
+	padding: 5vh 5vh;
+}
+.rentBlock{
+	position: relative;
+	display:inline-block;
+	background-color: #eb4934;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #eb4934;
+	width:45%;
+	margin:0.5% 0.3%;
+	padding:1%;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.rentBlock:hover{
+	background-color: #fb5944;
+}
+
+.rentBlock .title{
+	font-family: Raleway, sans-serif;
+	text-align: left;
+	padding: 1vh 2vw 2vh 2vw;
+	font-weight: 600;
+}
+.rentBlock > p, .rentBlock > label{
+	font-family: Raleway, sans-serif;
+	text-align: left;
+	padding: 0 2vw 0 2vw;
+	line-height: 1vh;
+	font-weight: 300;
+}
+
+.rentBlock .image{
+	align-self: : center;
+	padding:2vh 0vw 1vh 1vw;
+	width: 95%;
+	height:150px;
+}
+
+.rentBlock .rentBtn{
+	margin: 1vh 2vw;
+	width:50%;
+	text-align: center;
+	background-color: #FE2E2E; 
+	color:black;
+	font-family: Raleway, sans-serif;
+	font-weight: 400;
+	padding:10px;
+	float:right;
+
+}
+
+.rentBlock .rentBtn:hover{
+	background-color: #FE4E4E;
+}
+
+form, .username, .password, .email, .address, .password-confirm, .contact, .model, .number, .price, .seats, .startDays, .forDays{
+	margin: 0 auto;
+	text-align: center;
+}
+form{
+	padding: 3vh 0 0 0;
+	text-align: center;
+}
+.username, .password, .email, .address, .password-confirm, .contact, .model, .number, .price, .seats, .startDays, .forDays{
+	padding-bottom: 3vh;
+}
+.choice{
+	padding-top: 3vh;
+	padding-bottom: 5vh;
+}
+
+.register-selection{
+	font-family: Raleway, sans-serif;
+	font-weight: 800;
+	font-size: 2em;
+	text-align: center;
+	color:#E85A4F;
+	line-height: 10px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.register-selection a{
+	display:inline-block;
+	padding: 3%;
+	background-color: #eb4934;
+	margin:10vh 5vw;
+}
+
+.register-selection a:hover{
+	background-color: #E98074;
+}
+
+
+input[type="text"], input[type="password"], input[type="date"], #forDays{
+	width: 15vw;
+	border-color: grey;
+	background-color: #EAE7DC;
+	padding:1vh;
+}
+
+label{
+	font-family: Raleway,sans-serif;
+}
+input[type='date']{
+	width:10vw;
+}
+.alert-bad, .alert-good{
+	text-align:center;
+	list-style-type: none;
+	width:60%;
+	font-family: Raleway,sans-serif;
+	margin: 0 auto;
+	border-style: solid;
+	border-radius: 10px;
+}
+.alert-bad{
+	border-color:red;
+	background-color:#CF9090;
+}
+.alert-good{
+	border-color:green;
+	background-color:#90CF90;
+}
+.alert-bad ul, .alert-good ul{
+	list-style-type: none;
+}
+.logout{
+	color:black !important;
+}
+.no-rent{
+	text-align: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-size: 2em;
+	font-family: Raleway,sans-serif;
+}
+
+
+@media screen and (max-width: 930px){
+	.nav-1{
+		display:none;
+	}
+	.nav-2{
+		display:none;
+		position:relative;
+		width:25vw;
+		text-align: left;
+		background-color: #E98074;
+		left:-4vw;
+		top:-1vh;
+		padding:10% 5% 5% 5%;
+		height:100vh;
+		overflow: hidden;
+	}
+	.nav-2 a.nav-left{
+		display:block;
+		margin: 1vh 2vw;
+		width:80%;
+
+	}
+	#nav-logo{
+		display:block;
+	}
+	.rentBlock{
+		display:block;
+	}
+	.fa{
+		display:block;
+		position:absolute;
+		top:0;
+		left:0;
+		width:50px;
+		height:50px;
+		z-index: 100000;
+	}
+}
